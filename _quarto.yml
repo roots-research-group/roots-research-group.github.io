@@ -16,8 +16,6 @@ website:
       Unless stated otherwise, published under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). 
     left: |
       ![](http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.eu.png){fig-alt="cc license" width=128px}
-    right: |
-      ![](/metafiles/mbd_logo.png){fig-alt="mbd logo" width=128px}
   back-to-top-navigation: false
   bread-crumbs: false
   navbar:
