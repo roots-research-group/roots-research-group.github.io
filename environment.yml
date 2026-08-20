@@ -1,8 +1,14 @@
-name: quarto_env #DO NOT CHANGE!
+name: quarto_project
 channels:
-  - conda-forge #DO NOT CHANGE!
+- conda-forge
+- nodefaults
+
 dependencies:
-  - python=$PYTHON_VERSION #DO NOT CHANGE
-  - scipy
-  - numpy
-  - matplotlib
+  - python==3.11
+  - pip
+  - pip:
+    - matplotlib
+    - jupyterlab
+    - numpy
+    - jupyter-cache
+    - pyyaml
