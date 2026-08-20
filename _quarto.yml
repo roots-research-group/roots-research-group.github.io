@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: public
+  render:
+    - ./*.qmd
+
+website:
+  #favicon: /metafiles/logo.png
+  search: 
+    location: navbar
+    type: overlay
+  title: "RootS Research Group"
+  page-footer: 
+    background: light
+    center: |
+      Unless stated otherwise, published under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). 
+    left: |
+      ![](http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.eu.png){fig-alt="cc license" width=128px}
+    right: |
+      ![](/metafiles/mbd_logo.png){fig-alt="mbd logo" width=128px}
+  back-to-top-navigation: false
+  bread-crumbs: false
+  navbar:
+    title: false
+    #logo: /metafiles/mbd_logo_white.png
+    #logo-href: https://www.mbd.rwth-aachen.de
+    left:
+      - text: "Home"
+        href: index.qmd
+    right:
+      - icon: globe
+        href: https://roots-research.group
+
+format:
+  html:
+    theme: 
+      light: sandstone
+      dark: cyborg
+    css: styles.css 
+    toc: true
+    html-math-method: mathjax
+    include-in-header:
+      - text: |
+          <script>
+          MathJax = {
+            tex: {
+              tags: 'ams'
+            }
+          };
+          </script>
+
+pdf-engine: xelatex
+
+execute: 
+  freeze: auto
+
+
+

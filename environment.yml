@@ -1,0 +1,8 @@
+name: quarto_env #DO NOT CHANGE!
+channels:
+  - conda-forge #DO NOT CHANGE!
+dependencies:
+  - python=$PYTHON_VERSION #DO NOT CHANGE
+  - scipy
+  - numpy
+  - matplotlib
