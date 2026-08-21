@@ -3,10 +3,8 @@ on:
   push:
     branches: [ main ]
   pull_request:
-
 permissions:
   contents: write
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -14,7 +12,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
       - name: Install micromamba
         uses: mamba-org/setup-micromamba@v2
         with:
@@ -22,18 +19,15 @@ jobs:
           init-shell: bash
           cache-environment: true
           cache-downloads: true
-
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
       - name: Render Quarto project
         shell: bash -el {0}   # auto-activates the micromamba env for this step
         run: quarto render
-
       - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _html
-        publish_branch: gh-pages
-        cname: roots-research.group
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _html
+          publish_branch: gh-pages
+          cname: roots-research.group
