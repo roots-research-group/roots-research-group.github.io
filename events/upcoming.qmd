@@ -1,0 +1,23 @@
+---
+title: "Upcoming events"
+toc: true
+from: markdown+emoji
+sidebar: true
+format:
+  html:
+    page-layout: full
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+## Training Course
+
+🗓️ 2-3 September 2026 📍 Trento, Italy
+
+- Advanced training on the diagnosis and mitigation of slope instability
+- More information is available [here](/files/trento.pdf) or contact Giuseppe Pedone (giuseppe.pedone@unitn.it)
+
+## Summer PhD School 2027
+
+- Currently being organized by the University of Perugia and the University of Florence.
+- This school is specifically designed to train PhD candidates and early-career researchers in state-of-the-art experimental techniques, monitoring strategies, and numerical modelling for SVA interaction.

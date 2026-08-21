@@ -1,0 +1,11 @@
+---
+title: "Past events"
+toc: true
+from: markdown+emoji
+sidebar: true
+format:
+  html:
+    page-layout: full
+    link-external-icon: true
+    link-external-newwindow: true
+---
