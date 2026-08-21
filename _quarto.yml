@@ -25,6 +25,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Members"
+        href: members.qmd
     right:
       - icon: globe
         href: https://roots-research.group

@@ -1,0 +1,58 @@
+---
+title: "Members and affiliations"
+toc: true
+from: markdown+emoji
+sidebar: true
+format:
+  html:
+    page-layout: full
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+| Name | Affiliation | Email |
+|---|---|---|
+| Floriana Anselmucci | University of Twente, Netherlands | f.a.r.anselmucci@utwente.nl |
+| Georgios Belokas | University of West Attica, Greece | gbelokas@gmail.com |
+| Giovanni Biondi | University of Messina, Italy | giovanni.biondi@unime.it |
+| David Boldrin | The James Hutton Institute, United Kingdom | david.boldrin@hutton.ac.uk |
+| Vittoria Capobianco | Norwegian Geotechnical Institute, Norway | vittoria.capobianco@ngi.no |
+| Giuseppe Cardile | Mediterranea University of Reggio Calabria, Italy | giuseppe.cardile@unirc.it |
+| Rafaela Cardoso | CERIS / Instituto Superior Técnico, University of Lisbon, Portugal | rafaela.cardoso@tecnico.ulisboa.pt |
+| Manuela Cecconi | Università di Perugia, Italy | manuela.cecconi@unipg.it |
+| Federica Cotecchia | Politecnico di Bari, Italy | federica.cotecchia@poliba.it |
+| Sabatino Cuomo | University of Salerno, Italy | scuomo@unisa.it |
+| Pantaleone De Vita | University of Naples Federico II, Italy | pantaleone.devita@unina.it |
+| Silvano Emanuele Donvito | Politecnico di Bari, Italy | s.donvito@phd.poliba.it |
+| Alessandro Fraccica | ISPRA, Italy | alessandro.fraccica@isprambiente.it |
+| Andrea Galli | Politecnico di Milano, Italy | andrea.galli@polimi.it |
+| Josif Josifovski | Ss. Cyril and Methodius University in Skopje, Faculty of Civil Engineering, North Macedonia | jjosifovski@gf.ukim.edu.mk |
+| Jonathan Knappett | University of Oxford, United Kingdom | jonathan.knappett@eng.ox.ac.uk |
+| Anthony Leung | The Hong Kong University of Science and Technology, Hong Kong SAR, China | ceanthony@ust.hk |
+| Zhun Mao | INRAE – UMR AMAP, France | zhun.mao@inrae.fr |
+| Gerrit Meijer | University of Bath, United Kingdom | gjm36@bath.ac.uk |
+| Luca Pagano | University of Naples Federico II, Italy | luca.pagano@unina.it |
+| Vincenzo Pane | Università di Perugia, Italy | vincenzo.pane@unipg.it |
+| Heleni Pantelidou | Arup, United Kingdom | heleni.pantelidou@arup.com |
+| Giuseppe Pedone | University of Trento, Italy | giuseppe.pedone@unitn.it |
+| Josip Peranić | University of Rijeka, Faculty of Civil Engineering, Croatia | josip.peranic@uniri.hr |
+| Pasquale Perrini | Consorzio Interuniversitario per l'Idrologia, Italy | pasquale.perrini@uniba.it |
+| Marianna Pirone | University of Naples Federico II, Italy | marianna.pirone@unina.it |
+| Federico Preti | University of Florence, DAGRI, Italy | federico.preti@unifi.it |
+| Guido Rianna | CMCC Foundation – Euro-Mediterranean Center on Climate Change, Italy | guido.rianna@cmcc.it |
+| Riccardo Rigon | University of Trento, Italy | riccardo.rigon@unitn.it |
+| Enrique Romero | Universitat Politècnica de Catalunya / CIMNE, Spain | enrique.romero-morales@upc.edu |
+| Hubert Savenije | Delft University of Technology, Netherlands | h.h.g.savenije@tudelft.nl |
+| Gianvito Scaringi | Charles University, Czech Republic | gianvito.scaringi@natur.cuni.cz |
+| Volker Schlüter | Federal Waterways Engineering and Research Institute (BAW), Germany | volker.schlueter@baw.de |
+| Joel Smethurst | University of Southampton, United Kingdom | j.a.smethurst@soton.ac.uk |
+| Nico Stasi | Politecnico di Bari, Italy | stasinico@gmail.com |
+| Vito Tagarelli | Politecnico di Bari, Italy | vito.tagarelli@poliba.it |
+| Alessandro Tarantino | University of Strathclyde, United Kingdom | alessandro.tarantino@strath.ac.uk |
+| Katerina Tsiampousi | Imperial College London, United Kingdom | aikaterini.tsiampousi05@imperial.ac.uk |
+| Gianfranco Urciuoli | University of Naples Federico II, Italy | gianurci@unina.it |
+| Marco Uzielli | University of Florence, Italy | marco.uzielli@unifi.it |
+| Jean Vaunat | Universitat Politècnica de Catalunya, Spain | jean.vaunat@upc.edu |
+| Giulia Viggiani | University of Cambridge, United Kingdom | gv278@cam.ac.uk |
+| Anil Yildiz | RWTH Aachen University, Germany | yildiz@mbd.rwth-aachen.de |
+| Lidija Zdravkovic | Imperial College London, United Kingdom | l.zdravkovic@imperial.ac.uk |

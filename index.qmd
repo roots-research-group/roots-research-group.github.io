@@ -1,5 +1,5 @@
 ---
-pagetitle: "RootS Research Group"
+title: "RootS Research Group"
 toc: true
 from: markdown+emoji
 sidebar: true
