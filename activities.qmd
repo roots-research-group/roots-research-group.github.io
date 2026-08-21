@@ -10,26 +10,26 @@ format:
     link-external-newwindow: true
 ---
 
-**Joint International Review Paper in Geomechanics for Energy and the Environment**
+## Joint International Review Paper in Geomechanics for Energy and the Environment
   
 - Building upon the multidisciplinary discussions and synergies initiated during the 1st International Workshop on Rooted-Soils (RootS23, Perugia), network participants have collaborated on a comprehensive international review paper.
 - This publication synthesizes cutting-edge insights and multi-scale approaches regarding Soil-Vegetation-Atmosphere (SVA) interactions and their geotechnical implications.
 - See [Cecconi et al. (2025)](https://doi.org/10.1016/j.gete.2025.100723)
 
-**Collaborative Field and Laboratory Campaign (Nottoria Case Study)** 
+## Collaborative Field and Laboratory Campaign (Nottoria Case Study) 
 
 - Ongoing joint experimental research involving the University of Perugia (UNIPG), ISPRA (Italian Institute for Environmental Protection and Research), the University of Florence (UNIFI), and the Polytechnic University of Bari (POLIBA).
 - This activity focuses on in-situ measurements of root-soil mechanical reinforcement and the characterization of hydraulic properties and states within vegetated soil covers in beech forests (e.g., investigating the predisposing role of vegetation cutting on debris flow triggering in Nottoria, Central Italy).
 
-**RootS Community Survey (In Progress)**
+## RootS Community Survey (In Progress)
   
 - A dedicated survey currently being designed to be circulated among network participants to map institutional expertise, aggregate ongoing research data, and foster new collaborative initiatives across participating groups.
 
-**Network Expansion & New Working Groups** 
+## Network Expansion & New Working Groups
 
 - Active integration of new research groups and broadening of interdisciplinary partnerships, strengthening collaboration across academic institutions and research centers.
 
-**Next RootS International Conference**
+## Next RootS International Conference
 
 - Preparations are underway for the upcoming RootS International Conference (planned for 2027–2028), designed to gather the global scientific community to share breakthrough findings and define future research roadmaps (to be announced soon).
 
