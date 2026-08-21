@@ -26,7 +26,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -73,6 +73,24 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+<script>
+
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+
+</script>
+
+<script type="module">import "https://cdn.plot.ly/plotly-3.7.0.min"</script>
+
+
+
 <script>
 MathJax = {
   tex: {
@@ -275,6 +293,21 @@ MathJax = {
     <a class="nav-link active" href="./members.html" aria-current="page"> 
 <span class="menu-text">Members</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="./events/upcoming.html">
+ <span class="dropdown-text">Upcoming events</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./events/past.html">
+ <span class="dropdown-text">Past events</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -320,239 +353,309 @@ MathJax = {
 </header>
 
 
+<div id="63b9e188" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div style="height:560px; width:100%;">            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script>if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="656ba605-50b8-46f9-a0c7-4baa9a708528" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("656ba605-50b8-46f9-a0c7-4baa9a708528")) {                    Plotly.newPlot(                        "656ba605-50b8-46f9-a0c7-4baa9a708528",                        [{"hoverinfo":"text","hovertemplate":"%{text}\u003cextra\u003e\u003c\u002fextra\u003e","lat":[41.1171,40.8518,51.5074,43.1122,46.0679,43.7696,41.3851,52.2215,37.9838,38.1938,57.1497,59.9139,38.1113,38.7223,40.6824,41.9028,45.4642,41.9981,51.752,22.3193,43.6108,51.3811,45.3271,39.3086,40.3515,52.0116,50.0755,49.0069,50.9097,55.8642,52.2053,50.7753],"lon":[16.8719,14.2681,-0.1278,12.3888,11.1211,11.2558,2.1734,6.8937,23.7275,15.554,-2.0943,10.7522,15.6619,-9.1393,14.7681,12.4964,9.19,21.4254,-1.2577,114.1694,3.8767,-2.359,14.4422,16.2537,18.175,4.3571,14.4378,8.4037,-1.4044,-4.2518,0.1218,6.0839],"marker":{"color":"#3A6EA5","opacity":0.88,"size":[28.0,28.0,25.588457268119896,22.72792206135786,22.72792206135786,22.72792206135786,22.72792206135786,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0]},"mode":"markers","text":["\u003cb\u003eBari, Italy\u003c\u002fb\u003e\u003cbr\u003e4 members\u003cbr\u003e&#8226; Federica Cotecchia\u003cbr\u003e&#8226; Nico Stasi\u003cbr\u003e&#8226; Silvano Emanuele Donvito\u003cbr\u003e&#8226; Vito Tagarelli","\u003cb\u003eNaples, Italy\u003c\u002fb\u003e\u003cbr\u003e4 members\u003cbr\u003e&#8226; Gianfranco Urciuoli\u003cbr\u003e&#8226; Luca Pagano\u003cbr\u003e&#8226; Marianna Pirone\u003cbr\u003e&#8226; Pantaleone De Vita","\u003cb\u003eLondon, United Kingdom\u003c\u002fb\u003e\u003cbr\u003e3 members\u003cbr\u003e&#8226; Heleni Pantelidou\u003cbr\u003e&#8226; Katerina Tsiampousi\u003cbr\u003e&#8226; Lidija Zdravkovic","\u003cb\u003ePerugia, Italy\u003c\u002fb\u003e\u003cbr\u003e2 members\u003cbr\u003e&#8226; Manuela Cecconi\u003cbr\u003e&#8226; Vincenzo Pane","\u003cb\u003eTrento, Italy\u003c\u002fb\u003e\u003cbr\u003e2 members\u003cbr\u003e&#8226; Giuseppe Pedone\u003cbr\u003e&#8226; Riccardo Rigon","\u003cb\u003eFlorence, Italy\u003c\u002fb\u003e\u003cbr\u003e2 members\u003cbr\u003e&#8226; Federico Preti\u003cbr\u003e&#8226; Marco Uzielli","\u003cb\u003eBarcelona, Spain\u003c\u002fb\u003e\u003cbr\u003e2 members\u003cbr\u003e&#8226; Enrique Romero\u003cbr\u003e&#8226; Jean Vaunat","\u003cb\u003eEnschede, Netherlands\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Floriana Anselmucci","\u003cb\u003eAthens, Greece\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Georgios Belokas","\u003cb\u003eMessina, Italy\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Giovanni Biondi","\u003cb\u003eAberdeen, United Kingdom\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; David Boldrin","\u003cb\u003eOslo, Norway\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Vittoria Capobianco","\u003cb\u003eReggio Calabria, Italy\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Giuseppe Cardile","\u003cb\u003eLisbon, Portugal\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Rafaela Cardoso","\u003cb\u003eSalerno, Italy\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Sabatino Cuomo","\u003cb\u003eRome, Italy\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Alessandro Fraccica","\u003cb\u003eMilan, Italy\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Andrea Galli","\u003cb\u003eSkopje, North Macedonia\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Josif Josifovski","\u003cb\u003eOxford, United Kingdom\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Jonathan Knappett","\u003cb\u003eHong Kong, Hong Kong SAR, China\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Anthony Leung","\u003cb\u003eMontpellier, France\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Zhun Mao","\u003cb\u003eBath, United Kingdom\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Gerrit Meijer","\u003cb\u003eRijeka, Croatia\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Josip Perani\u0107","\u003cb\u003eCosenza, Italy\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Pasquale Perrini","\u003cb\u003eLecce, Italy\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Guido Rianna","\u003cb\u003eDelft, Netherlands\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Hubert Savenije","\u003cb\u003ePrague, Czech Republic\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Gianvito Scaringi","\u003cb\u003eKarlsruhe, Germany\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Volker Schl\u00fcter","\u003cb\u003eSouthampton, United Kingdom\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Joel Smethurst","\u003cb\u003eGlasgow, United Kingdom\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Alessandro Tarantino","\u003cb\u003eCambridge, United Kingdom\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Giulia Viggiani","\u003cb\u003eAachen, Germany\u003c\u002fb\u003e\u003cbr\u003e1 member\u003cbr\u003e&#8226; Anil Yildiz"],"type":"scattermap"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"map":{"center":{"lat":48.5,"lon":8},"style":"carto-positron","zoom":2.85},"margin":{"l":0,"r":0,"t":0,"b":0},"hoverlabel":{"font":{"color":"#F4F6F8","size":12},"bgcolor":"#1F2933","align":"left"},"height":560,"showlegend":false},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('656ba605-50b8-46f9-a0c7-4baa9a708528');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script>        </div>
+</div>
+</div>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
-<th>Affiliation</th>
-<th>Email</th>
+<th>Institution</th>
+<th>Country</th>
+<th>Profile</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Floriana Anselmucci</td>
-<td>University of Twente, Netherlands</td>
-<td>f.a.r.anselmucci@utwente.nl</td>
+<td>University of Twente</td>
+<td>Netherlands</td>
+<td><a href="https://people.utwente.nl/f.a.r.anselmucci">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Georgios Belokas</td>
-<td>University of West Attica, Greece</td>
-<td>gbelokas@gmail.com</td>
+<td>University of West Attica</td>
+<td>Greece</td>
+<td><a href="https://civ.uniwa.gr/en/profile/belokas-georgios/">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Giovanni Biondi</td>
-<td>University of Messina, Italy</td>
-<td>giovanni.biondi@unime.it</td>
+<td>University of Messina</td>
+<td>Italy</td>
+<td><a href="https://www.unime.it/it/persona/giovanni-biondi">Profile</a></td>
 </tr>
 <tr class="even">
 <td>David Boldrin</td>
-<td>The James Hutton Institute, United Kingdom</td>
-<td>david.boldrin@hutton.ac.uk</td>
+<td>The James Hutton Institute</td>
+<td>United Kingdom</td>
+<td><a href="https://www.hutton.ac.uk/people/david-boldrin/">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Vittoria Capobianco</td>
-<td>Norwegian Geotechnical Institute, Norway</td>
-<td>vittoria.capobianco@ngi.no</td>
+<td>Norwegian Geotechnical Institute</td>
+<td>Norway</td>
+<td><a href="https://www.researchgate.net/profile/Vittoria-Capobianco">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Giuseppe Cardile</td>
-<td>Mediterranea University of Reggio Calabria, Italy</td>
-<td>giuseppe.cardile@unirc.it</td>
+<td>Mediterranea University of Reggio Calabria</td>
+<td>Italy</td>
+<td><a href="https://unirc.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unirc.it%2Fresource%2Fperson%2F1468">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Rafaela Cardoso</td>
-<td>CERIS / Instituto Superior Técnico, University of Lisbon, Portugal</td>
-<td>rafaela.cardoso@tecnico.ulisboa.pt</td>
+<td>CERIS / Instituto Superior Técnico, University of Lisbon</td>
+<td>Portugal</td>
+<td><a href="https://fenix.tecnico.ulisboa.pt/homepage/ist13977">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Manuela Cecconi</td>
-<td>Università di Perugia, Italy</td>
-<td>manuela.cecconi@unipg.it</td>
+<td>Università di Perugia</td>
+<td>Italy</td>
+<td><a href="https://www.unipg.it/personale/manuela.cecconi">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Federica Cotecchia</td>
-<td>Politecnico di Bari, Italy</td>
-<td>federica.cotecchia@poliba.it</td>
+<td>Politecnico di Bari</td>
+<td>Italy</td>
+<td><a href="http://www.dicatech.poliba.it/index.php?id=80&amp;idp=188">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Sabatino Cuomo</td>
-<td>University of Salerno, Italy</td>
-<td>scuomo@unisa.it</td>
+<td>University of Salerno</td>
+<td>Italy</td>
+<td><a href="https://docenti.unisa.it/020363/en/curriculum">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Pantaleone De Vita</td>
-<td>University of Naples Federico II, Italy</td>
-<td>pantaleone.devita@unina.it</td>
+<td>University of Naples Federico II</td>
+<td>Italy</td>
+<td><a href="https://www.docenti.unina.it/pantaleone.devita">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Silvano Emanuele Donvito</td>
-<td>Politecnico di Bari, Italy</td>
-<td>s.donvito@phd.poliba.it</td>
+<td>Politecnico di Bari</td>
+<td>Italy</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Alessandro Fraccica</td>
-<td>ISPRA, Italy</td>
-<td>alessandro.fraccica@isprambiente.it</td>
+<td>ISPRA</td>
+<td>Italy</td>
+<td><a href="https://www.researchgate.net/profile/Alessandro-Fraccica">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Andrea Galli</td>
-<td>Politecnico di Milano, Italy</td>
-<td>andrea.galli@polimi.it</td>
+<td>Politecnico di Milano</td>
+<td>Italy</td>
+<td><a href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=500&amp;k_doc=73404">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Josif Josifovski</td>
-<td>Ss. Cyril and Methodius University in Skopje, Faculty of Civil Engineering, North Macedonia</td>
-<td>jjosifovski@gf.ukim.edu.mk</td>
+<td>Ss. Cyril and Methodius University in Skopje</td>
+<td>North Macedonia</td>
+<td><a href="https://gf.ukim.edu.mk/en/professor/%D0%B4-%D1%80-%D1%98%D0%BE%D1%81%D0%B8%D1%84%D0%BE%D0%B2%D1%81%D0%BA%D0%B8-%D1%98%D0%BE%D1%81%D0%B8%D1%84/">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Jonathan Knappett</td>
-<td>University of Oxford, United Kingdom</td>
-<td>jonathan.knappett@eng.ox.ac.uk</td>
+<td>University of Oxford</td>
+<td>United Kingdom</td>
+<td><a href="https://eng.ox.ac.uk/people/jonathan-knappett">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Anthony Leung</td>
-<td>The Hong Kong University of Science and Technology, Hong Kong SAR, China</td>
-<td>ceanthony@ust.hk</td>
+<td>The Hong Kong University of Science and Technology</td>
+<td>Hong Kong SAR, China</td>
+<td><a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=anthony-kwan-leung-ceanthony">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Zhun Mao</td>
-<td>INRAE – UMR AMAP, France</td>
-<td>zhun.mao@inrae.fr</td>
+<td>INRAE – UMR AMAP</td>
+<td>France</td>
+<td><a href="https://amap.cirad.fr/en/annuaire2.php?lettre=M">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Gerrit Meijer</td>
-<td>University of Bath, United Kingdom</td>
-<td>gjm36@bath.ac.uk</td>
+<td>University of Bath</td>
+<td>United Kingdom</td>
+<td><a href="https://researchportal.bath.ac.uk/en/persons/gerrit-meijer/">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Luca Pagano</td>
-<td>University of Naples Federico II, Italy</td>
-<td>luca.pagano@unina.it</td>
+<td>University of Naples Federico II</td>
+<td>Italy</td>
+<td><a href="https://www.docenti.unina.it/luca.pagano">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Vincenzo Pane</td>
-<td>Università di Perugia, Italy</td>
-<td>vincenzo.pane@unipg.it</td>
+<td>Università di Perugia</td>
+<td>Italy</td>
+<td><a href="http://www.diei.unipg.it/it/aree/geotecnica/itemlist/user/157-panevincenzo">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Heleni Pantelidou</td>
-<td>Arup, United Kingdom</td>
-<td>heleni.pantelidou@arup.com</td>
+<td>Arup</td>
+<td>United Kingdom</td>
+<td><a href="https://www.researchgate.net/profile/Heleni-Pantelidou">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Giuseppe Pedone</td>
-<td>University of Trento, Italy</td>
-<td>giuseppe.pedone@unitn.it</td>
+<td>University of Trento</td>
+<td>Italy</td>
+<td><a href="https://webapps.unitn.it/du/en/Persona/PER0243767">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Josip Peranić</td>
-<td>University of Rijeka, Faculty of Civil Engineering, Croatia</td>
-<td>josip.peranic@uniri.hr</td>
+<td>University of Rijeka</td>
+<td>Croatia</td>
+<td><a href="https://gradri.uniri.hr/en/faculty/organisation/departments/department-for-hydrotechnics-and-geotechnics/">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Pasquale Perrini</td>
-<td>Consorzio Interuniversitario per l’Idrologia, Italy</td>
-<td>pasquale.perrini@uniba.it</td>
+<td>Consorzio Interuniversitario per l’Idrologia</td>
+<td>Italy</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Marianna Pirone</td>
-<td>University of Naples Federico II, Italy</td>
-<td>marianna.pirone@unina.it</td>
+<td>University of Naples Federico II</td>
+<td>Italy</td>
+<td><a href="https://www.docenti.unina.it/marianna.pirone">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Federico Preti</td>
-<td>University of Florence, DAGRI, Italy</td>
-<td>federico.preti@unifi.it</td>
+<td>University of Florence, DAGRI</td>
+<td>Italy</td>
+<td><a href="https://cercachi.unifi.it/p-doc2-2016-200001-P-3f2a3d31332d2e-0.html">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Guido Rianna</td>
-<td>CMCC Foundation – Euro-Mediterranean Center on Climate Change, Italy</td>
-<td>guido.rianna@cmcc.it</td>
+<td>CMCC Foundation</td>
+<td>Italy</td>
+<td><a href="https://www.cmcc.it/people/rianna-guido">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Riccardo Rigon</td>
-<td>University of Trento, Italy</td>
-<td>riccardo.rigon@unitn.it</td>
+<td>University of Trento</td>
+<td>Italy</td>
+<td><a href="https://webapps.unitn.it/du/en/Persona/PER0004267">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Enrique Romero</td>
-<td>Universitat Politècnica de Catalunya / CIMNE, Spain</td>
-<td>enrique.romero-morales@upc.edu</td>
+<td>Universitat Politècnica de Catalunya / CIMNE</td>
+<td>Spain</td>
+<td><a href="https://futur.upc.edu/EnriqueEdgarRomeroMorales">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Hubert Savenije</td>
-<td>Delft University of Technology, Netherlands</td>
-<td>h.h.g.savenije@tudelft.nl</td>
+<td>Delft University of Technology</td>
+<td>Netherlands</td>
+<td><a href="https://www.tudelft.nl/en/staff/h.h.g.savenije/">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Gianvito Scaringi</td>
-<td>Charles University, Czech Republic</td>
-<td>gianvito.scaringi@natur.cuni.cz</td>
+<td>Charles University</td>
+<td>Czech Republic</td>
+<td><a href="https://cuni.cz/UKEN-2124.html">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Volker Schlüter</td>
-<td>Federal Waterways Engineering and Research Institute (BAW), Germany</td>
-<td>volker.schlueter@baw.de</td>
+<td>Federal Waterways Engineering and Research Institute (BAW)</td>
+<td>Germany</td>
+<td><a href="https://ufersicherung-baw-bfg.baw.de/binnenbereich/de/kontakt">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Joel Smethurst</td>
-<td>University of Southampton, United Kingdom</td>
-<td>j.a.smethurst@soton.ac.uk</td>
+<td>University of Southampton</td>
+<td>United Kingdom</td>
+<td><a href="https://www.southampton.ac.uk/people/5wynyr/professor-joel-smethurst">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Nico Stasi</td>
-<td>Politecnico di Bari, Italy</td>
-<td>stasinico@gmail.com</td>
+<td>Politecnico di Bari</td>
+<td>Italy</td>
+<td><a href="https://www.researchgate.net/profile/Nico-Stasi-2">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Vito Tagarelli</td>
-<td>Politecnico di Bari, Italy</td>
-<td>vito.tagarelli@poliba.it</td>
+<td>Politecnico di Bari</td>
+<td>Italy</td>
+<td><a href="https://resources.dicatechpoliba.it/index.php?id=462&amp;idp=546">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Alessandro Tarantino</td>
-<td>University of Strathclyde, United Kingdom</td>
-<td>alessandro.tarantino@strath.ac.uk</td>
+<td>University of Strathclyde</td>
+<td>United Kingdom</td>
+<td><a href="https://www.strath.ac.uk/staff/tarantinoalessandroprof/">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Katerina Tsiampousi</td>
-<td>Imperial College London, United Kingdom</td>
-<td>aikaterini.tsiampousi05@imperial.ac.uk</td>
+<td>Imperial College London</td>
+<td>United Kingdom</td>
+<td><a href="https://profiles.imperial.ac.uk/aikaterini.tsiampousi05">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Gianfranco Urciuoli</td>
-<td>University of Naples Federico II, Italy</td>
-<td>gianurci@unina.it</td>
+<td>University of Naples Federico II</td>
+<td>Italy</td>
+<td><a href="https://www.iris.unina.it/cris/rp/rp26842">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Marco Uzielli</td>
-<td>University of Florence, Italy</td>
-<td>marco.uzielli@unifi.it</td>
+<td>University of Florence</td>
+<td>Italy</td>
+<td><a href="https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3a31372b30.html">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Jean Vaunat</td>
-<td>Universitat Politècnica de Catalunya, Spain</td>
-<td>jean.vaunat@upc.edu</td>
+<td>Universitat Politècnica de Catalunya</td>
+<td>Spain</td>
+<td><a href="https://futur.upc.edu/JeanVaunat?locale=en">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Giulia Viggiani</td>
-<td>University of Cambridge, United Kingdom</td>
-<td>gv278@cam.ac.uk</td>
+<td>University of Cambridge</td>
+<td>United Kingdom</td>
+<td><a href="https://www.eng.cam.ac.uk/profiles/gv278">Profile</a></td>
 </tr>
 <tr class="odd">
 <td>Anil Yildiz</td>
-<td>RWTH Aachen University, Germany</td>
-<td>yildiz@mbd.rwth-aachen.de</td>
+<td>RWTH Aachen University</td>
+<td>Germany</td>
+<td><a href="https://www.mbd.rwth-aachen.de/cms/mbd/der-lehrstuhl/team/~qqcsz/anil-yildiz/?lidx=1&amp;allou=1">Profile</a></td>
 </tr>
 <tr class="even">
 <td>Lidija Zdravkovic</td>
-<td>Imperial College London, United Kingdom</td>
-<td>l.zdravkovic@imperial.ac.uk</td>
+<td>Imperial College London</td>
+<td>United Kingdom</td>
+<td><a href="https://profiles.imperial.ac.uk/l.zdravkovic">Profile</a></td>
 </tr>
 </tbody>
 </table>
