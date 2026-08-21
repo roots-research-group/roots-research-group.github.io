@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "events/upcoming.html",
+    "href": "events/upcoming.html",
+    "title": "Upcoming events",
+    "section": "",
+    "text": "🗓️ 2-3 September 2026 📍 Trento, Italy\n\nAdvanced training on the diagnosis and mitigation of slope instability\nMore information is available here or contact Giuseppe Pedone (giuseppe.pedone@unitn.it)"
+  },
+  {
+    "objectID": "events/upcoming.html#training-course",
+    "href": "events/upcoming.html#training-course",
+    "title": "Upcoming events",
+    "section": "",
+    "text": "🗓️ 2-3 September 2026 📍 Trento, Italy\n\nAdvanced training on the diagnosis and mitigation of slope instability\nMore information is available here or contact Giuseppe Pedone (giuseppe.pedone@unitn.it)"
+  },
+  {
+    "objectID": "events/upcoming.html#summer-phd-school-2027",
+    "href": "events/upcoming.html#summer-phd-school-2027",
+    "title": "Upcoming events",
+    "section": "Summer PhD School 2027",
+    "text": "Summer PhD School 2027\n\nCurrently being organized by the University of Perugia and the University of Florence.\nThis school is specifically designed to train PhD candidates and early-career researchers in state-of-the-art experimental techniques, monitoring strategies, and numerical modelling for SVA interaction."
+  },
+  {
     "objectID": "members.html",
     "href": "members.html",
     "title": "Members and affiliations",
@@ -7,45 +28,52 @@
     "text": "Name\nAffiliation\nEmail\n\n\n\n\nFloriana Anselmucci\nUniversity of Twente, Netherlands\nf.a.r.anselmucci@utwente.nl\n\n\nGeorgios Belokas\nUniversity of West Attica, Greece\ngbelokas@gmail.com\n\n\nGiovanni Biondi\nUniversity of Messina, Italy\ngiovanni.biondi@unime.it\n\n\nDavid Boldrin\nThe James Hutton Institute, United Kingdom\ndavid.boldrin@hutton.ac.uk\n\n\nVittoria Capobianco\nNorwegian Geotechnical Institute, Norway\nvittoria.capobianco@ngi.no\n\n\nGiuseppe Cardile\nMediterranea University of Reggio Calabria, Italy\ngiuseppe.cardile@unirc.it\n\n\nRafaela Cardoso\nCERIS / Instituto Superior Técnico, University of Lisbon, Portugal\nrafaela.cardoso@tecnico.ulisboa.pt\n\n\nManuela Cecconi\nUniversità di Perugia, Italy\nmanuela.cecconi@unipg.it\n\n\nFederica Cotecchia\nPolitecnico di Bari, Italy\nfederica.cotecchia@poliba.it\n\n\nSabatino Cuomo\nUniversity of Salerno, Italy\nscuomo@unisa.it\n\n\nPantaleone De Vita\nUniversity of Naples Federico II, Italy\npantaleone.devita@unina.it\n\n\nSilvano Emanuele Donvito\nPolitecnico di Bari, Italy\ns.donvito@phd.poliba.it\n\n\nAlessandro Fraccica\nISPRA, Italy\nalessandro.fraccica@isprambiente.it\n\n\nAndrea Galli\nPolitecnico di Milano, Italy\nandrea.galli@polimi.it\n\n\nJosif Josifovski\nSs. Cyril and Methodius University in Skopje, Faculty of Civil Engineering, North Macedonia\njjosifovski@gf.ukim.edu.mk\n\n\nJonathan Knappett\nUniversity of Oxford, United Kingdom\njonathan.knappett@eng.ox.ac.uk\n\n\nAnthony Leung\nThe Hong Kong University of Science and Technology, Hong Kong SAR, China\nceanthony@ust.hk\n\n\nZhun Mao\nINRAE – UMR AMAP, France\nzhun.mao@inrae.fr\n\n\nGerrit Meijer\nUniversity of Bath, United Kingdom\ngjm36@bath.ac.uk\n\n\nLuca Pagano\nUniversity of Naples Federico II, Italy\nluca.pagano@unina.it\n\n\nVincenzo Pane\nUniversità di Perugia, Italy\nvincenzo.pane@unipg.it\n\n\nHeleni Pantelidou\nArup, United Kingdom\nheleni.pantelidou@arup.com\n\n\nGiuseppe Pedone\nUniversity of Trento, Italy\ngiuseppe.pedone@unitn.it\n\n\nJosip Peranić\nUniversity of Rijeka, Faculty of Civil Engineering, Croatia\njosip.peranic@uniri.hr\n\n\nPasquale Perrini\nConsorzio Interuniversitario per l’Idrologia, Italy\npasquale.perrini@uniba.it\n\n\nMarianna Pirone\nUniversity of Naples Federico II, Italy\nmarianna.pirone@unina.it\n\n\nFederico Preti\nUniversity of Florence, DAGRI, Italy\nfederico.preti@unifi.it\n\n\nGuido Rianna\nCMCC Foundation – Euro-Mediterranean Center on Climate Change, Italy\nguido.rianna@cmcc.it\n\n\nRiccardo Rigon\nUniversity of Trento, Italy\nriccardo.rigon@unitn.it\n\n\nEnrique Romero\nUniversitat Politècnica de Catalunya / CIMNE, Spain\nenrique.romero-morales@upc.edu\n\n\nHubert Savenije\nDelft University of Technology, Netherlands\nh.h.g.savenije@tudelft.nl\n\n\nGianvito Scaringi\nCharles University, Czech Republic\ngianvito.scaringi@natur.cuni.cz\n\n\nVolker Schlüter\nFederal Waterways Engineering and Research Institute (BAW), Germany\nvolker.schlueter@baw.de\n\n\nJoel Smethurst\nUniversity of Southampton, United Kingdom\nj.a.smethurst@soton.ac.uk\n\n\nNico Stasi\nPolitecnico di Bari, Italy\nstasinico@gmail.com\n\n\nVito Tagarelli\nPolitecnico di Bari, Italy\nvito.tagarelli@poliba.it\n\n\nAlessandro Tarantino\nUniversity of Strathclyde, United Kingdom\nalessandro.tarantino@strath.ac.uk\n\n\nKaterina Tsiampousi\nImperial College London, United Kingdom\naikaterini.tsiampousi05@imperial.ac.uk\n\n\nGianfranco Urciuoli\nUniversity of Naples Federico II, Italy\ngianurci@unina.it\n\n\nMarco Uzielli\nUniversity of Florence, Italy\nmarco.uzielli@unifi.it\n\n\nJean Vaunat\nUniversitat Politècnica de Catalunya, Spain\njean.vaunat@upc.edu\n\n\nGiulia Viggiani\nUniversity of Cambridge, United Kingdom\ngv278@cam.ac.uk\n\n\nAnil Yildiz\nRWTH Aachen University, Germany\nyildiz@mbd.rwth-aachen.de\n\n\nLidija Zdravkovic\nImperial College London, United Kingdom\nl.zdravkovic@imperial.ac.uk"
   },
   {
+    "objectID": "activities.html",
+    "href": "activities.html",
+    "title": "Research activities",
+    "section": "",
+    "text": "Joint International Review Paper in Geomechanics for Energy and the Environment\n\nBuilding upon the multidisciplinary discussions and synergies initiated during the 1st International Workshop on Rooted-Soils (RootS23, Perugia), network participants have collaborated on a comprehensive international review paper.\nThis publication synthesizes cutting-edge insights and multi-scale approaches regarding Soil-Vegetation-Atmosphere (SVA) interactions and their geotechnical implications.\nSee Cecconi et al. (2025)\n\nCollaborative Field and Laboratory Campaign (Nottoria Case Study)\n\nOngoing joint experimental research involving the University of Perugia (UNIPG), ISPRA (Italian Institute for Environmental Protection and Research), the University of Florence (UNIFI), and the Polytechnic University of Bari (POLIBA).\nThis activity focuses on in-situ measurements of root-soil mechanical reinforcement and the characterization of hydraulic properties and states within vegetated soil covers in beech forests (e.g., investigating the predisposing role of vegetation cutting on debris flow triggering in Nottoria, Central Italy).\n\nRootS Community Survey (In Progress)\n\nA dedicated survey currently being designed to be circulated among network participants to map institutional expertise, aggregate ongoing research data, and foster new collaborative initiatives across participating groups.\n\nNetwork Expansion & New Working Groups\n\nActive integration of new research groups and broadening of interdisciplinary partnerships, strengthening collaboration across academic institutions and research centers.\n\nNext RootS International Conference\n\nPreparations are underway for the upcoming RootS International Conference (planned for 2027–2028), designed to gather the global scientific community to share breakthrough findings and define future research roadmaps (to be announced soon)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About RootS",
+    "section": "",
+    "text": "RootS is an international multidisciplinary research group founded in 2022 to advance the understanding and modelling of Soil–Vegetation–Atmosphere (SVA) interactions. By integrating expertise from geotechnical engineering, plant science, agronomy, hydrology and atmospheric sciences, RootS investigates the Environmental Domain (ED), the coupled system comprising rooted soils, vegetation and the atmosphere, to improve the prediction and management of geotechnical systems under changing environmental conditions."
+  },
+  {
+    "objectID": "about.html#roots-research-group-identity",
+    "href": "about.html#roots-research-group-identity",
+    "title": "About RootS",
+    "section": "",
+    "text": "RootS is an international multidisciplinary research group founded in 2022 to advance the understanding and modelling of Soil–Vegetation–Atmosphere (SVA) interactions. By integrating expertise from geotechnical engineering, plant science, agronomy, hydrology and atmospheric sciences, RootS investigates the Environmental Domain (ED), the coupled system comprising rooted soils, vegetation and the atmosphere, to improve the prediction and management of geotechnical systems under changing environmental conditions."
+  },
+  {
+    "objectID": "about.html#motivation-and-aims",
+    "href": "about.html#motivation-and-aims",
+    "title": "About RootS",
+    "section": "Motivation and Aims",
+    "text": "Motivation and Aims\nUnderstanding Soil–Vegetation–Atmosphere interactions is fundamental for predicting the behaviour and evolution of geotechnical systems under changing environmental and climatic conditions. Despite significant advances in individual disciplines, the coupled physical, hydraulic, mechanical and biological processes occurring within the rooted soil environment remain only partially understood. Addressing these challenges requires an interdisciplinary research framework.\nRootS aims to establish an international multidisciplinary community dedicated to advancing the experimental characterization, monitoring and numerical modelling of Soil–Vegetation–Atmosphere interactions, providing the scientific basis for more resilient and sustainable geotechnical engineering."
+  },
+  {
+    "objectID": "about.html#our-vision",
+    "href": "about.html#our-vision",
+    "title": "About RootS",
+    "section": "Our Vision",
+    "text": "Our Vision\nTo become the international reference community for research on Soil–Vegetation–Atmosphere interaction by promoting interdisciplinary collaboration, advancing scientific knowledge, and supporting the development of resilient, sustainable and climate-adaptive geotechnical solutions."
+  },
+  {
+    "objectID": "about.html#our-mission",
+    "href": "about.html#our-mission",
+    "title": "About RootS",
+    "section": "Our Mission",
+    "text": "Our Mission\nOur mission is to build an international community that integrates geotechnical engineering, plant sciences, agronomy, hydrology and atmospheric sciences to advance the understanding of Soil–Vegetation–Atmosphere interactions and translate scientific knowledge into resilient geotechnical engineering solutions for a changing climate.\n🔬 Advance scientific understanding - Improve the knowledge of coupled SVA processes\n🌱 Develop innovative methodologies - Experimental, monitoring and numerical approaches\n🤝 Build an international community - Connect researchers across disciplines\n🌍 Support resilient engineering - Promote quantitative Nature-based Solutions and climate adaptation"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "RootS Research Group",
     "section": "",
     "text": "ROOTed Soils (RootS) is an international and multidisciplinary research network dedicated to advancing the understanding of Soil–Vegetation–Atmosphere (SVA) interactions and their role in governing the behaviour of natural and engineered geotechnical systems.\nThe network brings together geotechnical engineers, agronomists, soil scientists, plant scientists, hydrologists, atmospheric scientists, ecologists and numerical modellers with the common goal of developing a comprehensive understanding of the coupled physical, hydraulic, mechanical and biological processes occurring within the rooted soil environment.\nRootS promotes the integration of experimental investigations, field monitoring, laboratory testing and advanced numerical modelling to improve the characterization and prediction of SVA processes across multiple spatial and temporal scales. Particular attention is devoted to identifying the material properties, constitutive relationships and governing parameters that control the evolution of the environmental domain formed by soils, vegetation and the atmosphere.\nThe initiative originated in 2022 and has rapidly grown into an international scientific community through a series of annual conferences (RootS23, RootS24 and RootS25), bringing together researchers from different disciplines and institutions. These meetings have established the foundations of a collaborative research network aimed at fostering interdisciplinary research, sharing knowledge and developing innovative approaches for addressing the challenges posed by climate change, geohazards and sustainable geotechnical engineering.\nToday, RootS represents a growing international community committed to building a common scientific framework for Soil–Vegetation–Atmosphere interaction and promoting collaboration among academia, research institutions and industry."
-  },
-  {
-    "objectID": "index.html#about-roots",
-    "href": "index.html#about-roots",
-    "title": "RootS Research Group",
-    "section": "",
-    "text": "ROOTed Soils (RootS) is an international and multidisciplinary research network dedicated to advancing the understanding of Soil–Vegetation–Atmosphere (SVA) interactions and their role in governing the behaviour of natural and engineered geotechnical systems.\nThe network brings together geotechnical engineers, agronomists, soil scientists, plant scientists, hydrologists, atmospheric scientists, ecologists and numerical modellers with the common goal of developing a comprehensive understanding of the coupled physical, hydraulic, mechanical and biological processes occurring within the rooted soil environment.\nRootS promotes the integration of experimental investigations, field monitoring, laboratory testing and advanced numerical modelling to improve the characterization and prediction of SVA processes across multiple spatial and temporal scales. Particular attention is devoted to identifying the material properties, constitutive relationships and governing parameters that control the evolution of the environmental domain formed by soils, vegetation and the atmosphere.\nThe initiative originated in 2022 and has rapidly grown into an international scientific community through a series of annual conferences (RootS23, RootS24 and RootS25), bringing together researchers from different disciplines and institutions. These meetings have established the foundations of a collaborative research network aimed at fostering interdisciplinary research, sharing knowledge and developing innovative approaches for addressing the challenges posed by climate change, geohazards and sustainable geotechnical engineering.\nToday, RootS represents a growing international community committed to building a common scientific framework for Soil–Vegetation–Atmosphere interaction and promoting collaboration among academia, research institutions and industry."
-  },
-  {
-    "objectID": "index.html#roots-research-group-identity",
-    "href": "index.html#roots-research-group-identity",
-    "title": "RootS Research Group",
-    "section": "RootS research group identity",
-    "text": "RootS research group identity\nRootS is an international multidisciplinary research group founded in 2022 to advance the understanding and modelling of Soil–Vegetation–Atmosphere (SVA) interactions. By integrating expertise from geotechnical engineering, plant science, agronomy, hydrology and atmospheric sciences, RootS investigates the Environmental Domain (ED), the coupled system comprising rooted soils, vegetation and the atmosphere, to improve the prediction and management of geotechnical systems under changing environmental conditions."
-  },
-  {
-    "objectID": "index.html#motivation-and-aims",
-    "href": "index.html#motivation-and-aims",
-    "title": "RootS Research Group",
-    "section": "Motivation and Aims",
-    "text": "Motivation and Aims\nUnderstanding Soil–Vegetation–Atmosphere interactions is fundamental for predicting the behaviour and evolution of geotechnical systems under changing environmental and climatic conditions. Despite significant advances in individual disciplines, the coupled physical, hydraulic, mechanical and biological processes occurring within the rooted soil environment remain only partially understood. Addressing these challenges requires an interdisciplinary research framework.\nRootS aims to establish an international multidisciplinary community dedicated to advancing the experimental characterization, monitoring and numerical modelling of Soil–Vegetation–Atmosphere interactions, providing the scientific basis for more resilient and sustainable geotechnical engineering."
-  },
-  {
-    "objectID": "index.html#our-vision",
-    "href": "index.html#our-vision",
-    "title": "RootS Research Group",
-    "section": "Our Vision",
-    "text": "Our Vision\nTo become the international reference community for research on Soil–Vegetation–Atmosphere interaction by promoting interdisciplinary collaboration, advancing scientific knowledge, and supporting the development of resilient, sustainable and climate-adaptive geotechnical solutions."
-  },
-  {
-    "objectID": "index.html#our-mission",
-    "href": "index.html#our-mission",
-    "title": "RootS Research Group",
-    "section": "Our Mission",
-    "text": "Our Mission\nOur mission is to build an international community that integrates geotechnical engineering, plant sciences, agronomy, hydrology and atmospheric sciences to advance the understanding of Soil–Vegetation–Atmosphere interactions and translate scientific knowledge into resilient geotechnical engineering solutions for a changing climate.\n🔬 Advance scientific understanding - Improve the knowledge of coupled SVA processes\n🌱 Develop innovative methodologies - Experimental, monitoring and numerical approaches\n🤝 Build an international community - Connect researchers across disciplines\n🌍 Support resilient engineering - Promote quantitative Nature-based Solutions and climate adaptation"
   }
 ]
