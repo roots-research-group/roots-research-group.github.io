@@ -8,6 +8,10 @@
   },
   {
     "listing": "/events/past.html",
-    "items": []
+    "items": [
+      "/events/past/roots25.html",
+      "/events/past/roots24.html",
+      "/events/past/roots23.html"
+    ]
   }
 ]
