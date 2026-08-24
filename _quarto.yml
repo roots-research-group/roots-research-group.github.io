@@ -3,7 +3,7 @@ project:
   output-dir: _html
   render:
     - ./*.qmd
-    - ./events/*.qmd
+    - ./events/**/*.qmd
 
 website:
   #favicon: /metafiles/logo.png

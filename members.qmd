@@ -90,65 +90,71 @@ format:
 #| echo: false
 #| warning: false
 
-import plotly.graph_objects as go
-from collections import defaultdict
+import csv
+import json
 import math
+import os
+import time
+import urllib.parse
+import urllib.request
+from collections import defaultdict
 
-# name, city, country, lat, lon
-members = [
-    ("Floriana Anselmucci", "Enschede", "Netherlands", 52.2215, 6.8937),
-    ("Georgios Belokas", "Athens", "Greece", 37.9838, 23.7275),
-    ("Giovanni Biondi", "Messina", "Italy", 38.1938, 15.5540),
-    ("David Boldrin", "Aberdeen", "United Kingdom", 57.1497, -2.0943),
-    ("Vittoria Capobianco", "Oslo", "Norway", 59.9139, 10.7522),
-    ("Giuseppe Cardile", "Reggio Calabria", "Italy", 38.1113, 15.6619),
-    ("Rafaela Cardoso", "Lisbon", "Portugal", 38.7223, -9.1393),
-    ("Manuela Cecconi", "Perugia", "Italy", 43.1122, 12.3888),
-    ("Federica Cotecchia", "Bari", "Italy", 41.1171, 16.8719),
-    ("Sabatino Cuomo", "Salerno", "Italy", 40.6824, 14.7681),
-    ("Pantaleone De Vita", "Naples", "Italy", 40.8518, 14.2681),
-    ("Silvano Emanuele Donvito", "Bari", "Italy", 41.1171, 16.8719),
-    ("Alessandro Fraccica", "Rome", "Italy", 41.9028, 12.4964),
-    ("Andrea Galli", "Milan", "Italy", 45.4642, 9.1900),
-    ("Josif Josifovski", "Skopje", "North Macedonia", 41.9981, 21.4254),
-    ("Jonathan Knappett", "Oxford", "United Kingdom", 51.7520, -1.2577),
-    ("Anthony Leung", "Hong Kong", "Hong Kong SAR, China", 22.3193, 114.1694),
-    ("Zhun Mao", "Montpellier", "France", 43.6108, 3.8767),
-    ("Gerrit Meijer", "Bath", "United Kingdom", 51.3811, -2.3590),
-    ("Luca Pagano", "Naples", "Italy", 40.8518, 14.2681),
-    ("Vincenzo Pane", "Perugia", "Italy", 43.1122, 12.3888),
-    ("Heleni Pantelidou", "London", "United Kingdom", 51.5074, -0.1278),
-    ("Giuseppe Pedone", "Trento", "Italy", 46.0679, 11.1211),
-    ("Josip Peranić", "Rijeka", "Croatia", 45.3271, 14.4422),
-    ("Pasquale Perrini", "Cosenza", "Italy", 39.3086, 16.2537),
-    ("Marianna Pirone", "Naples", "Italy", 40.8518, 14.2681),
-    ("Federico Preti", "Florence", "Italy", 43.7696, 11.2558),
-    ("Guido Rianna", "Lecce", "Italy", 40.3515, 18.1750),
-    ("Riccardo Rigon", "Trento", "Italy", 46.0679, 11.1211),
-    ("Enrique Romero", "Barcelona", "Spain", 41.3851, 2.1734),
-    ("Hubert Savenije", "Delft", "Netherlands", 52.0116, 4.3571),
-    ("Gianvito Scaringi", "Prague", "Czech Republic", 50.0755, 14.4378),
-    ("Volker Schlüter", "Karlsruhe", "Germany", 49.0069, 8.4037),
-    ("Joel Smethurst", "Southampton", "United Kingdom", 50.9097, -1.4044),
-    ("Nico Stasi", "Bari", "Italy", 41.1171, 16.8719),
-    ("Vito Tagarelli", "Bari", "Italy", 41.1171, 16.8719),
-    ("Alessandro Tarantino", "Glasgow", "United Kingdom", 55.8642, -4.2518),
-    ("Katerina Tsiampousi", "London", "United Kingdom", 51.5074, -0.1278),
-    ("Gianfranco Urciuoli", "Naples", "Italy", 40.8518, 14.2681),
-    ("Marco Uzielli", "Florence", "Italy", 43.7696, 11.2558),
-    ("Jean Vaunat", "Barcelona", "Spain", 41.3851, 2.1734),
-    ("Giulia Viggiani", "Cambridge", "United Kingdom", 52.2053, 0.1218),
-    ("Anil Yildiz", "Aachen", "Germany", 50.7753, 6.0839),
-    ("Lidija Zdravkovic", "London", "United Kingdom", 51.5074, -0.1278),
-]
+import plotly.graph_objects as go
+
+CITIES_CACHE = "cities.csv"
+NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
+USER_AGENT = "roots-research-group.github.io (https://github.com/roots-research-group/roots-research-group.github.io)"
+
+
+def load_city_cache(path):
+    cache = {}
+    if os.path.exists(path):
+        with open(path, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                cache[(row["City"], row["Country"])] = (float(row["Latitude"]), float(row["Longitude"]))
+    return cache
+
+
+def save_city_cache(path, cache):
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["City", "Country", "Latitude", "Longitude"])
+        for (city, country), (lat, lon) in sorted(cache.items()):
+            writer.writerow([city, country, lat, lon])
+
+
+def geocode(city, country):
+    params = urllib.parse.urlencode({"q": f"{city}, {country}", "format": "json", "limit": 1})
+    req = urllib.request.Request(f"{NOMINATIM_URL}?{params}", headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=10) as resp:
+        results = json.load(resp)
+    if not results:
+        raise ValueError(f"Could not geocode '{city}, {country}' via Nominatim")
+    return float(results[0]["lat"]), float(results[0]["lon"])
+
+
+with open("members.csv", newline="", encoding="utf-8") as f:
+    members = list(csv.DictReader(f))
+
+# cities.csv is an auto-updated coordinate cache: don't edit it by hand,
+# it's regenerated here whenever members.csv contains a city not seen before.
+coords = load_city_cache(CITIES_CACHE)
+missing = sorted({(row["City"], row["Country"]) for row in members} - coords.keys())
+for i, (city, country) in enumerate(missing):
+    if i > 0:
+        time.sleep(1)  # respect Nominatim's 1 request/second usage policy
+    coords[(city, country)] = geocode(city, country)
+if missing:
+    save_city_cache(CITIES_CACHE, coords)
 
 # aggregate members that share a city so pins don't stack
 groups = defaultdict(list)
-for name, city, country, lat, lon in members:
-    groups[(city, country, lat, lon)].append(name)
+for row in members:
+    groups[(row["City"], row["Country"])].append(row["Name"])
 
 lats, lons, hovers, counts = [], [], [], []
-for (city, country, lat, lon), names in sorted(groups.items(), key=lambda x: -len(x[1])):
+for (city, country), names in sorted(groups.items(), key=lambda x: -len(x[1])):
+    lat, lon = coords[(city, country)]
     n = len(names)
     lats.append(lat)
     lons.append(lon)
@@ -183,49 +189,51 @@ fig
 ```
 
 
-| Name | Institution | Country | Profile |
-|---|---|---|---|
-| Floriana Anselmucci | University of Twente | Netherlands | [Profile](https://people.utwente.nl/f.a.r.anselmucci) |
-| Georgios Belokas | University of West Attica | Greece | [Profile](https://civ.uniwa.gr/en/profile/belokas-georgios/) |
-| Giovanni Biondi | University of Messina | Italy | [Profile](https://www.unime.it/it/persona/giovanni-biondi) |
-| David Boldrin | The James Hutton Institute | United Kingdom | [Profile](https://www.hutton.ac.uk/people/david-boldrin/) |
-| Vittoria Capobianco | Norwegian Geotechnical Institute | Norway | [Profile](https://www.researchgate.net/profile/Vittoria-Capobianco) |
-| Giuseppe Cardile | Mediterranea University of Reggio Calabria | Italy | [Profile](https://unirc.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unirc.it%2Fresource%2Fperson%2F1468) |
-| Rafaela Cardoso | CERIS / Instituto Superior Técnico, University of Lisbon | Portugal | [Profile](https://fenix.tecnico.ulisboa.pt/homepage/ist13977) |
-| Manuela Cecconi | Università di Perugia | Italy | [Profile](https://www.unipg.it/personale/manuela.cecconi) |
-| Federica Cotecchia | Politecnico di Bari | Italy | [Profile](http://www.dicatech.poliba.it/index.php?id=80&idp=188) |
-| Sabatino Cuomo | University of Salerno | Italy | [Profile](https://docenti.unisa.it/020363/en/curriculum) |
-| Pantaleone De Vita | University of Naples Federico II | Italy | [Profile](https://www.docenti.unina.it/pantaleone.devita) |
-| Silvano Emanuele Donvito | Politecnico di Bari | Italy |  |
-| Alessandro Fraccica | ISPRA | Italy | [Profile](https://www.researchgate.net/profile/Alessandro-Fraccica) |
-| Andrea Galli | Politecnico di Milano | Italy | [Profile](https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=500&k_doc=73404) |
-| Josif Josifovski | Ss. Cyril and Methodius University in Skopje | North Macedonia | [Profile](https://gf.ukim.edu.mk/en/professor/%D0%B4-%D1%80-%D1%98%D0%BE%D1%81%D0%B8%D1%84%D0%BE%D0%B2%D1%81%D0%BA%D0%B8-%D1%98%D0%BE%D1%81%D0%B8%D1%84/) |
-| Jonathan Knappett | University of Oxford | United Kingdom | [Profile](https://eng.ox.ac.uk/people/jonathan-knappett) |
-| Anthony Leung | The Hong Kong University of Science and Technology | Hong Kong SAR, China | [Profile](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=anthony-kwan-leung-ceanthony) |
-| Zhun Mao | INRAE – UMR AMAP | France | [Profile](https://amap.cirad.fr/en/annuaire2.php?lettre=M) |
-| Gerrit Meijer | University of Bath | United Kingdom | [Profile](https://researchportal.bath.ac.uk/en/persons/gerrit-meijer/) |
-| Luca Pagano | University of Naples Federico II | Italy | [Profile](https://www.docenti.unina.it/luca.pagano) |
-| Vincenzo Pane | Università di Perugia | Italy | [Profile](http://www.diei.unipg.it/it/aree/geotecnica/itemlist/user/157-panevincenzo) |
-| Heleni Pantelidou | Arup | United Kingdom | [Profile](https://www.researchgate.net/profile/Heleni-Pantelidou) |
-| Giuseppe Pedone | University of Trento | Italy | [Profile](https://webapps.unitn.it/du/en/Persona/PER0243767) |
-| Josip Peranić | University of Rijeka | Croatia | [Profile](https://gradri.uniri.hr/en/faculty/organisation/departments/department-for-hydrotechnics-and-geotechnics/) |
-| Pasquale Perrini | Consorzio Interuniversitario per l'Idrologia | Italy |  |
-| Marianna Pirone | University of Naples Federico II | Italy | [Profile](https://www.docenti.unina.it/marianna.pirone) |
-| Federico Preti | University of Florence, DAGRI | Italy | [Profile](https://cercachi.unifi.it/p-doc2-2016-200001-P-3f2a3d31332d2e-0.html) |
-| Guido Rianna | CMCC Foundation | Italy | [Profile](https://www.cmcc.it/people/rianna-guido) |
-| Riccardo Rigon | University of Trento | Italy | [Profile](https://webapps.unitn.it/du/en/Persona/PER0004267) |
-| Enrique Romero | Universitat Politècnica de Catalunya / CIMNE | Spain | [Profile](https://futur.upc.edu/EnriqueEdgarRomeroMorales) |
-| Hubert Savenije | Delft University of Technology | Netherlands | [Profile](https://www.tudelft.nl/en/staff/h.h.g.savenije/) |
-| Gianvito Scaringi | Charles University | Czech Republic | [Profile](https://cuni.cz/UKEN-2124.html) |
-| Volker Schlüter | Federal Waterways Engineering and Research Institute (BAW) | Germany | [Profile](https://ufersicherung-baw-bfg.baw.de/binnenbereich/de/kontakt) |
-| Joel Smethurst | University of Southampton | United Kingdom | [Profile](https://www.southampton.ac.uk/people/5wynyr/professor-joel-smethurst) |
-| Nico Stasi | Politecnico di Bari | Italy | [Profile](https://www.researchgate.net/profile/Nico-Stasi-2) |
-| Vito Tagarelli | Politecnico di Bari | Italy | [Profile](https://resources.dicatechpoliba.it/index.php?id=462&idp=546) |
-| Alessandro Tarantino | University of Strathclyde | United Kingdom | [Profile](https://www.strath.ac.uk/staff/tarantinoalessandroprof/) |
-| Katerina Tsiampousi | Imperial College London | United Kingdom | [Profile](https://profiles.imperial.ac.uk/aikaterini.tsiampousi05) |
-| Gianfranco Urciuoli | University of Naples Federico II | Italy | [Profile](https://www.iris.unina.it/cris/rp/rp26842) |
-| Marco Uzielli | University of Florence | Italy | [Profile](https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3a31372b30.html) |
-| Jean Vaunat | Universitat Politècnica de Catalunya | Spain | [Profile](https://futur.upc.edu/JeanVaunat?locale=en) |
-| Giulia Viggiani | University of Cambridge | United Kingdom | [Profile](https://www.eng.cam.ac.uk/profiles/gv278) |
-| Anil Yildiz | RWTH Aachen University | Germany | [Profile](https://www.mbd.rwth-aachen.de/cms/mbd/der-lehrstuhl/team/~qqcsz/anil-yildiz/?lidx=1&allou=1) |
-| Lidija Zdravkovic | Imperial College London | United Kingdom | [Profile](https://profiles.imperial.ac.uk/l.zdravkovic) |
+```{python}
+#| echo: false
+#| warning: false
+
+import csv
+import plotly.graph_objects as go
+
+with open("members.csv", newline="", encoding="utf-8") as f:
+    rows = list(csv.DictReader(f))
+
+names = [r["Name"] for r in rows]
+institutions = [r["Institution"] for r in rows]
+cities = [r["City"] for r in rows]
+countries = [r["Country"] for r in rows]
+profiles = [f'<a href="{r["Profile"]}">Profile</a>' if r["Profile"] else "" for r in rows]
+
+n = len(rows)
+row_colors = ["#FFFFFF" if i % 2 == 0 else "#F4F1E9" for i in range(n)]
+header_height = 34
+row_height = 28
+
+fig = go.Figure(
+    go.Table(
+        columnwidth=[170, 230, 110, 130, 70],
+        header=dict(
+            values=["<b>Name</b>", "<b>Institution</b>", "<b>City</b>", "<b>Country</b>", "<b>Profile</b>"],
+            fill_color="#3A6EA5",
+            font=dict(color="white", size=13, family="IBM Plex Sans, sans-serif"),
+            align="left",
+            height=header_height,
+        ),
+        cells=dict(
+            values=[names, institutions, cities, countries, profiles],
+            fill_color=[row_colors] * 5,
+            font=dict(color="#26221B", size=12, family="IBM Plex Sans, sans-serif"),
+            align="left",
+            height=row_height,
+        ),
+    )
+)
+
+fig.update_layout(
+    margin=dict(l=0, r=0, t=8, b=8),
+    height=header_height + row_height * n + 20,
+)
+
+fig
+```

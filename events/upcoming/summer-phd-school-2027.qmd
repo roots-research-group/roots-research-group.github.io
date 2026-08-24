@@ -1,0 +1,10 @@
+---
+title: "Summer PhD School 2027"
+date: 2027-01-01
+date-format: "YYYY"
+description: "Training for PhD candidates and early-career researchers in state-of-the-art experimental techniques, monitoring strategies, and numerical modelling for SVA interaction."
+from: markdown+emoji
+---
+
+- Currently being organized by the University of Perugia and the University of Florence.
+- This school is specifically designed to train PhD candidates and early-career researchers in state-of-the-art experimental techniques, monitoring strategies, and numerical modelling for SVA interaction.

@@ -1,12 +1,17 @@
 ---
 title: "Past events"
-toc: true
+toc: false
 from: markdown+emoji
 sidebar: true
+listing:
+  contents: past
+  type: default
+  sort: "date desc"
+  date-format: "D MMMM YYYY"
+  fields: [date, title, subtitle, description]
 format:
   html:
     page-layout: full
     link-external-icon: true
     link-external-newwindow: true
 ---
-
