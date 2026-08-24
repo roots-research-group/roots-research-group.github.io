@@ -1,0 +1,9 @@
+---
+title: "RootS23"
+date: 2023-04-20
+date-format: "D MMMM YYYY"
+subtitle: "📍 Perugia, Italy"
+description: "Held in Perugia, Italy (20-21 April 2023), RootS23 was the 1st international event organized by the RootS group"
+from: markdown+emoji
+---
+

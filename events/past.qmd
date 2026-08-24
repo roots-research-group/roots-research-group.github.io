@@ -5,7 +5,7 @@ from: markdown+emoji
 sidebar: true
 listing:
   contents: past
-  type: default
+  type: grid
   sort: "date desc"
   date-format: "D MMMM YYYY"
   fields: [date, title, subtitle, description]

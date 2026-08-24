@@ -1,0 +1,12 @@
+---
+title: "RootS25"
+date: 2025-11-06
+date-format: "D MMMM YYYY"
+subtitle: "📍 Bari, Italy"
+description: "Held in Bari (6-8 November 2025), RootS25 was the 3rd  international workshop organized by the RootS group"
+from: markdown+emoji
+---
+
+```{=html}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3omy71Rp5iQ?si=armwzUShwsPYCdN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```

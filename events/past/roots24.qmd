@@ -1,0 +1,9 @@
+---
+title: "RootS24"
+date: 2024-05-10
+date-format: "D MMMM YYYY"
+subtitle: "📍 Online"
+description: "Held online (10 May 2024), RootS24 was the 2nd international workshop organized by the RootS group. Prof. Anthony Leung was invited to deliver a lecture. "
+from: markdown+emoji
+---
+

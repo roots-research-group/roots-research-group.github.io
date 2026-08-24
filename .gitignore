@@ -5,3 +5,4 @@ public*
 /.quarto/
 
 **/*.quarto_ipynb
+_html
