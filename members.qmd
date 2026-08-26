@@ -10,22 +10,40 @@ format:
     link-external-newwindow: true
 ---
 
-```{=html}
+```{python}
+#| echo: false
+#| warning: false
+
+import csv
+
+from IPython.display import HTML
+
+with open("members.csv", newline="", encoding="utf-8") as f:
+    _rows = list(csv.DictReader(f))
+
+_n_members = len(_rows)
+_n_cities = len({r["City"] for r in _rows})
+_n_countries = len({r["Country"] for r in _rows})
+
+HTML(f"""
 <div class="matlas-stats">
   <div class="matlas-stat">
-    <div class="matlas-n">44</div>
+    <div class="matlas-n">{_n_members}</div>
     <div class="matlas-l">Members</div>
   </div>
   <div class="matlas-stat">
-    <div class="matlas-n">32</div>
+    <div class="matlas-n">{_n_cities}</div>
     <div class="matlas-l">Cities</div>
   </div>
   <div class="matlas-stat">
-    <div class="matlas-n">13</div>
+    <div class="matlas-n">{_n_countries}</div>
     <div class="matlas-l">Countries</div>
   </div>
 </div>
+""")
+```
 
+```{=html}
 <style>
   .matlas-stats {
     --matlas-surface: #FFFFFF;
