@@ -12,7 +12,7 @@ format:
 
 ## Joint International Review Paper in Geomechanics for Energy and the Environment
   
-- Building upon the multidisciplinary discussions and synergies initiated during the 1st International Workshop on Rooted-Soils (RootS23, Perugia), network participants have collaborated on a comprehensive international review paper.
+- Building upon the multidisciplinary discussions and synergies initiated during the 1st International Workshop on Rooted-Soils ([RootS23](./events/past/roots23.qmd), Perugia), network participants have collaborated on a comprehensive international review paper.
 - This publication synthesizes cutting-edge insights and multi-scale approaches regarding Soil-Vegetation-Atmosphere (SVA) interactions and their geotechnical implications.
 - See [Cecconi et al. (2025)](https://doi.org/10.1016/j.gete.2025.100723)
 

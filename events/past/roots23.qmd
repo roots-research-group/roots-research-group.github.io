@@ -7,3 +7,4 @@ description: "Held in Perugia, Italy (20-21 April 2023), RootS23 was the 1st int
 from: markdown+emoji
 ---
 
+![](/img/roots23.jpg)

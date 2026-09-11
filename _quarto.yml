@@ -29,7 +29,9 @@ website:
       - text: "About"
         href: about.qmd
       - text: "Research activities"
-        href: activities.qmd
+        href: activities.qmd#
+      - text: "Outcomes"
+        href: outcomes.qmd
       - text: "Members"
         href: members.qmd
       - text: "Events"
