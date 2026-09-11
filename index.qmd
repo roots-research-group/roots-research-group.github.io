@@ -20,4 +20,4 @@ The initiative originated in 2022 and has rapidly grown into an international sc
 
 Today, RootS represents a growing international community committed to building a common scientific framework for Soil–Vegetation–Atmosphere interaction and promoting collaboration among academia, research institutions and industry.
 
-![Participants of [RootS25](./events/past/roots25.qmd) in Bari, Italy](./img/roots25.jpg)
+![Participants of [RootS25](./events/past/roots25.qmd) in Bari, Italy](./img/roots25.jpg){.lightbox}
