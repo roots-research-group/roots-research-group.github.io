@@ -1,17 +1,17 @@
 [
   {
-    "listing": "/events/upcoming.html",
-    "items": [
-      "/events/upcoming/training-course-2026.html",
-      "/events/upcoming/summer-phd-school-2027.html"
-    ]
-  },
-  {
     "listing": "/events/past.html",
     "items": [
+      "/events/past/training-course-2026.html",
       "/events/past/roots25.html",
       "/events/past/roots24.html",
       "/events/past/roots23.html"
+    ]
+  },
+  {
+    "listing": "/events/upcoming.html",
+    "items": [
+      "/events/upcoming/summer-phd-school-2027.html"
     ]
   }
 ]
