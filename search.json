@@ -32,14 +32,21 @@
     "href": "activities.html",
     "title": "Research activities",
     "section": "",
-    "text": "Building upon the multidisciplinary discussions and synergies initiated during the 1st International Workshop on Rooted-Soils (RootS23, Perugia), network participants have collaborated on a comprehensive international review paper.\nThis publication synthesizes cutting-edge insights and multi-scale approaches regarding Soil-Vegetation-Atmosphere (SVA) interactions and their geotechnical implications.\nSee Cecconi et al. (2025)"
+    "text": "pyrootmemo is an open-source Python package developed by Anil Yildiz and Gerrit J. Meijer for root reinforcement predictions that unifies model terminology, streamlines the use of units, and facilitates quick and transparent model selection, calculations and comparisons. Furthermore, sensitivity analysis and uncertainty quantification of models can be implemented easily thanks to the modular package structure. Developers welcome new contributions in the form of both implementations of existing and new models, as well as experimental data. Detailed documentation can be found here."
+  },
+  {
+    "objectID": "activities.html#pyrootmemo",
+    "href": "activities.html#pyrootmemo",
+    "title": "Research activities",
+    "section": "",
+    "text": "pyrootmemo is an open-source Python package developed by Anil Yildiz and Gerrit J. Meijer for root reinforcement predictions that unifies model terminology, streamlines the use of units, and facilitates quick and transparent model selection, calculations and comparisons. Furthermore, sensitivity analysis and uncertainty quantification of models can be implemented easily thanks to the modular package structure. Developers welcome new contributions in the form of both implementations of existing and new models, as well as experimental data. Detailed documentation can be found here."
   },
   {
     "objectID": "activities.html#joint-international-review-paper-in-geomechanics-for-energy-and-the-environment",
     "href": "activities.html#joint-international-review-paper-in-geomechanics-for-energy-and-the-environment",
     "title": "Research activities",
-    "section": "",
-    "text": "Building upon the multidisciplinary discussions and synergies initiated during the 1st International Workshop on Rooted-Soils (RootS23, Perugia), network participants have collaborated on a comprehensive international review paper.\nThis publication synthesizes cutting-edge insights and multi-scale approaches regarding Soil-Vegetation-Atmosphere (SVA) interactions and their geotechnical implications.\nSee Cecconi et al. (2025)"
+    "section": "Joint International Review Paper in Geomechanics for Energy and the Environment",
+    "text": "Joint International Review Paper in Geomechanics for Energy and the Environment\n\nBuilding upon the multidisciplinary discussions and synergies initiated during the 1st International Workshop on Rooted-Soils (RootS23, Perugia), network participants have collaborated on a comprehensive international review paper.\nThis publication synthesizes cutting-edge insights and multi-scale approaches regarding Soil-Vegetation-Atmosphere (SVA) interactions and their geotechnical implications.\nSee Cecconi et al. (2025)"
   },
   {
     "objectID": "activities.html#collaborative-field-and-laboratory-campaign-nottoria-case-study",
