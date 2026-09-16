@@ -10,6 +10,11 @@ format:
     link-external-newwindow: true
 ---
 
+## pyrootmemo
+
+[pyrootmemo](https://github.com/rootmemo/pyrootmemo) is an open-source Python package developed by [Anil Yildiz](https://www.mbd.rwth-aachen.de/cms/mbd/der-lehrstuhl/team/~qqcsz/anil-yildiz/?allou=1) and [Gerrit J. Meijer](https://researchportal.bath.ac.uk/en/persons/gerrit-meijer/) for root reinforcement predictions that unifies model terminology, streamlines the use of units, and facilitates quick and transparent model selection, calculations and comparisons. Furthermore, sensitivity analysis and uncertainty quantification of models can be implemented easily thanks to the modular package structure. Developers welcome new contributions in the form of both implementations of existing and new models, as well as experimental data. Detailed documentation can be found [here](https://zread.ai/rootmemo/pyrootmemo).
+
+
 ## Joint International Review Paper in Geomechanics for Energy and the Environment
   
 - Building upon the multidisciplinary discussions and synergies initiated during the 1st International Workshop on Rooted-Soils ([RootS23](./events/past/roots23.qmd), Perugia), network participants have collaborated on a comprehensive international review paper.
