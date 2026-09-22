@@ -6,6 +6,12 @@ project:
     - ./events/**/*.qmd
 
 website:
+  announcement: 
+    icon: patch-question-fill
+    dismissable: false
+    content: "**RootS Community Survey** Share your thoughts on the future of soil–vegetation–atmosphere research and practice! Click [here](https://forms.gle/3cDq1zjuPjfaVEXMA) to take the survey."
+    type: warning
+    position: below-navbar
   #favicon: /metafiles/logo.png
   search: 
     location: navbar

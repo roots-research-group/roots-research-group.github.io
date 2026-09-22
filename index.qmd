@@ -8,6 +8,8 @@ format:
     page-layout: full
     link-external-icon: true
     link-external-newwindow: true
+    linkcolor: "#116b04"
+
 ---
 
 ROOTed Soils (RootS) is an international and multidisciplinary research network dedicated to advancing the understanding of Soil–Vegetation–Atmosphere (SVA) interactions and their role in governing the behaviour of natural and engineered geotechnical systems.
