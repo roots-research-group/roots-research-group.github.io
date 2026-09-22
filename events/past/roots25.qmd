@@ -7,6 +7,63 @@ description: "Held in Bari (6-8 November 2025), RootS25 was the 3rd  internation
 from: markdown+emoji
 ---
 
+
+
+
+::: {.roots25-gallery}
+![](../../img/roots25/01.jpg){.lightbox group="roots25"}
+![](../../img/roots25/02.jpg){.lightbox group="roots25"}
+![](../../img/roots25/03.jpg){.lightbox group="roots25"}
+![](../../img/roots25/04.jpg){.lightbox group="roots25"}
+![](../../img/roots25/05.jpg){.lightbox group="roots25"}
+![](../../img/roots25/06.jpg){.lightbox group="roots25"}
+![](../../img/roots25/07.jpg){.lightbox group="roots25"}
+![](../../img/roots25/08.jpg){.lightbox group="roots25"}
+![](../../img/roots25/09.jpg){.lightbox group="roots25"}
+![](../../img/roots25/10.jpg){.lightbox group="roots25"}
+![](../../img/roots25/11.jpg){.lightbox group="roots25"}
+![](../../img/roots25/12.jpg){.lightbox group="roots25"}
+![](../../img/roots25/13.jpg){.lightbox group="roots25"}
+![](../../img/roots25/14.jpg){.lightbox group="roots25"}
+![](../../img/roots25/15.jpg){.lightbox group="roots25"}
+![](../../img/roots25/16.jpg){.lightbox group="roots25"}
+![](../../img/roots25/17.jpg){.lightbox group="roots25"}
+![](../../img/roots25/18.jpg){.lightbox group="roots25"}
+![](../../img/roots25/19.jpg){.lightbox group="roots25"}
+![](../../img/roots25/20.jpg){.lightbox group="roots25"}
+:::
+
+```{=html}
+<style>
+.roots25-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.roots25-gallery p {
+  display: contents;
+}
+.roots25-gallery a {
+  display: block;
+}
+.roots25-gallery img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .roots25-gallery { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .roots25-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+```
+
 ```{=html}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3omy71Rp5iQ?si=armwzUShwsPYCdN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ```
