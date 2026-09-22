@@ -1,8 +1,8 @@
 ---
-title: "RootS Research Group"
-toc: true
+pagetitle: "RootS"
 from: markdown+emoji
-sidebar: true
+sidebar: false
+toc: false
 format:
   html:
     page-layout: full
@@ -11,6 +11,14 @@ format:
     linkcolor: "#116b04"
 
 ---
+
+::: {.news-item}
+<span class="news-date">22.09.2026</span>
+<a class="news-title" href="https://forms.gle/3cDq1zjuPjfaVEXMA">RootS Community Survey</a>
+<div class="news-body">Share your thoughts on the future of soil–vegetation–atmosphere research and practice! Click [here](https://forms.gle/3cDq1zjuPjfaVEXMA) to take the survey.</div>
+:::
+
+# RootS Research Group
 
 ROOTed Soils (RootS) is an international and multidisciplinary research network dedicated to advancing the understanding of Soil–Vegetation–Atmosphere (SVA) interactions and their role in governing the behaviour of natural and engineered geotechnical systems.
 
