@@ -10,14 +10,14 @@
 #quarto-announcement .quarto-announcement-content a:hover {
   color: #131212;
 }
-
+/* News item card */
 .news-item {
   position: relative;
   border-radius: 12px;
   padding: 1.1rem 1.4rem;
   margin-bottom: 1.1rem;
   background: #f7f7f8;
-  border: 3px solid var(--bs-border-color, #e5e5e5);
+  border: 1px solid #e5e5e5;
   border-left: 7px solid var(--bs-primary);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
@@ -45,7 +45,7 @@
   display: block;
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: #1a1a1a;
   text-decoration: none;
   margin-bottom: 0.35rem;
 }
@@ -56,6 +56,30 @@
 
 .news-item .news-body {
   font-size: 0.92rem;
-  color: var(--bs-secondary-color, #666);
+  color: #555;
   line-height: 1.45;
+}
+
+/* Dark mode */
+body.quarto-dark .news-item {
+  background: #2a2f36;
+  border-color: #3a4048;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.quarto-dark .news-item:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(120, 194, 173, 0.15);
+}
+
+body.quarto-dark .news-item .news-title {
+  color: #f1f1f1;
+}
+
+body.quarto-dark .news-item .news-body {
+  color: #dce1e7;
+}
+
+body.quarto-dark .news-item .news-date {
+  color: #9fd8c7;
+  background: rgba(120, 194, 173, 0.18);
 }
