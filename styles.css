@@ -10,3 +10,52 @@
 #quarto-announcement .quarto-announcement-content a:hover {
   color: #131212;
 }
+
+.news-item {
+  position: relative;
+  border-radius: 12px;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 1.1rem;
+  background: #f7f7f8;
+  border: 3px solid var(--bs-border-color, #e5e5e5);
+  border-left: 7px solid var(--bs-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-item .news-date {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.12);
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+.news-item .news-title {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--bs-body-color);
+  text-decoration: none;
+  margin-bottom: 0.35rem;
+}
+
+.news-item .news-title:hover {
+  color: var(--bs-primary);
+}
+
+.news-item .news-body {
+  font-size: 0.92rem;
+  color: var(--bs-secondary-color, #666);
+  line-height: 1.45;
+}
