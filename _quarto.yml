@@ -12,7 +12,7 @@ website:
     content: "**RootS Community Survey** Share your thoughts on the future of soil–vegetation–atmosphere research and practice! Click [here](https://forms.gle/3cDq1zjuPjfaVEXMA) to take the survey."
     type: warning
     position: below-navbar
-  #favicon: /metafiles/logo.png
+  favicon: "/metafiles/logo.jpg"
   search: 
     location: navbar
     type: overlay
@@ -27,8 +27,8 @@ website:
   bread-crumbs: false
   navbar:
     title: false
-    #logo: /metafiles/mbd_logo_white.png
-    #logo-href: https://www.mbd.rwth-aachen.de
+    logo: "metafiles/logo.jpg"
+    logo-href: https://roots-research.group
     left:
       - text: "Home"
         href: index.qmd
