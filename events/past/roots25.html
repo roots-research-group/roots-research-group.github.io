@@ -49,6 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-69f1d71877a386da63511098b9b94c72.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -198,6 +201,37 @@ MathJax = {
 </header>
 
 
+<div class="roots25-gallery">
+<p><a href="../../img/roots25/01.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/01.jpg" class="img-fluid"></a> <a href="../../img/roots25/02.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/02.jpg" class="img-fluid"></a> <a href="../../img/roots25/03.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/03.jpg" class="img-fluid"></a> <a href="../../img/roots25/04.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/04.jpg" class="img-fluid"></a> <a href="../../img/roots25/05.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/05.jpg" class="img-fluid"></a> <a href="../../img/roots25/06.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/06.jpg" class="img-fluid"></a> <a href="../../img/roots25/07.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/07.jpg" class="img-fluid"></a> <a href="../../img/roots25/08.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/08.jpg" class="img-fluid"></a> <a href="../../img/roots25/09.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/09.jpg" class="img-fluid"></a> <a href="../../img/roots25/10.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/10.jpg" class="img-fluid"></a> <a href="../../img/roots25/11.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/11.jpg" class="img-fluid"></a> <a href="../../img/roots25/12.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/12.jpg" class="img-fluid"></a> <a href="../../img/roots25/13.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/13.jpg" class="img-fluid"></a> <a href="../../img/roots25/14.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/14.jpg" class="img-fluid"></a> <a href="../../img/roots25/15.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/15.jpg" class="img-fluid"></a> <a href="../../img/roots25/16.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/16.jpg" class="img-fluid"></a> <a href="../../img/roots25/17.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/17.jpg" class="img-fluid"></a> <a href="../../img/roots25/18.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/18.jpg" class="img-fluid"></a> <a href="../../img/roots25/19.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/19.jpg" class="img-fluid"></a> <a href="../../img/roots25/20.jpg" class="lightbox" data-gallery="roots25"><img src="../../img/roots25/20.jpg" class="img-fluid"></a></p>
+</div>
+<style>
+.roots25-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.roots25-gallery p {
+  display: contents;
+}
+.roots25-gallery a {
+  display: block;
+}
+.roots25-gallery img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .roots25-gallery { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .roots25-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3omy71Rp5iQ?si=armwzUShwsPYCdN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 
 
@@ -617,6 +651,38 @@ MathJax = {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
