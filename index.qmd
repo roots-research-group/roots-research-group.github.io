@@ -39,7 +39,7 @@ Today, RootS represents a growing international community committed to building 
 <div style="display: flex; align-items: center; gap: 15px; margin: 20px 0;">
 
   <img src="./img/TC208_Logo.PNG"
-       alt="TC223 logo"
+       alt="TC208 logo"
        style="width: 100px; height: auto; flex-shrink: 0;">
 
   <a href="https://www.issmge.org/committees/technical-committees/applications/slope-stability">
