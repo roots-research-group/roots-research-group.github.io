@@ -36,15 +36,25 @@ Today, RootS represents a growing international community committed to building 
 
 <p><strong>RootS</strong> operates under the auspices of:</p>
 
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 15px; margin: 20px 0;">
+
+  <div style="width: 100px; flex-shrink: 0;"></div>
+
   <a href="https://www.issmge.org/committees/technical-committees/applications/slope-stability">
-    TC208 "Slope Stability in Engineering Practice"
+    <strong>TC208</strong> "Slope Stability in Engineering Practice"
   </a>
+
 </div>
 
-<div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 15px; margin: 20px 0;">
+
+  <img src="./img/TC223_Logo.PNG"
+       alt="TC223 logo"
+       style="width: 100px; height: auto; flex-shrink: 0;">
+
   <a href="https://www.issmge.org/committees/technical-committees/applications/bio-geotechnics">
-    TC223 "Bio-Geotechnical Engineering"
+    <strong>TC223</strong> "Bio-Geotechnical Engineering"
   </a>
-  <img src="./img/TC223_Logo.PNG" alt="TC223 logo" style="width: 100px; height: auto;">
+
 </div>
+
